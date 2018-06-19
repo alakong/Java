@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSP&Servler과제</title>
+</head>
+<style>
+article {
+	border: 1px solid gray;
+	padding: 25px;
+	width: 70%;
+	background: radial-gradient(circle, aqua, red);
+	margin:auto;
+	border-radius : 10px;
+}
+
+h2 {
+	margin: left;
+}
+</style>
+<body>
+	<article>
+		<h2>성적을 입력하세요</h2>
+		<hr>
+		<form method="post" action="/mvc/grade">
+			이름 : <input type="text" name="name" required><br /> 평균점수 : <input
+				type="text" name="number" required><br /> <input
+				type="submit" name="ok" value="전송"> <input type="reset"
+				name="clear" value="재작성"><br>
+		</form>
+	</article>
+</body>
+</html>

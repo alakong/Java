@@ -1,0 +1,43 @@
+package day13;
+
+import java.io.*;
+
+public class FileWriterTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileWriter writer = null;
+		String path = "C:/iotest";
+		File isDir = new File(path);
+		if (!isDir.exists()) {//파일이 존재하지 않으면 파일을 만들어라
+			isDir.mkdirs();
+		}
+
+		try {
+			//FileWriter은 예외처리가 필요!!
+			writer = new FileWriter("c:/iotest/output.txt", true);// true를 넣으면 추가되어서 계속 써짐
+			char arr[] = { '객', '체', '지', '향', '언', '어', 'J', 'a', 'v', 'a' };
+			for (int cnt = 0; cnt < arr.length; cnt++) {
+				writer.write(arr[cnt]);
+			}
+			writer.write("\r\n");
+			writer.write(arr);
+			writer.write("\r\n");
+			writer.write("OCJP 시험대비");
+			writer.write("\r\n");
+			System.out.println("파일에 출력 완료!!");
+		} catch (IOException ioe) {
+			System.out.println("파일로 출력할 수 없습니다.");
+		} finally {//finally에서 파일을 닫아주고있음
+			try {
+				if (writer != null)
+					writer.close();
+			} catch (Exception e) {
+				System.out.println("파일을 닫는 동안 오류 발생!!");
+			}
+
+		}
+
+	}
+
+}

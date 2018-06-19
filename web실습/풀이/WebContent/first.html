@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>첫번째 HTML</title>
+<style>
+a {
+	text-decoration: none;
+	/* background-color:aqua; */
+}
+
+#target:hover {
+	opacity: 0.5;
+}
+
+h2 {
+	color: #90FFFF;
+}
+
+.pinkcolor {
+	color: aqua;
+	background-color: aqua;
+}
+
+span {
+	border: 1px dotted red;
+}
+
+.bold {
+	
+}
+</style>
+</head>
+<body>
+	<h1>HTML 테스트</h1>
+	<h2>HTML 테스트</h2>
+	<h3>HTML 테스트</h3>
+	<h4>HTML 테스트</h4>
+	<img src="/edu/images/jpg.jpg">
+	<img id="target" src="images/jpg.jpg" width="200">
+	<img src="http://localhost:8000/edu/images/jpg.jpg" width="400"
+		height="400">
+	<hr>
+	<span> <a href="http://java.sun.com/">자바의 홈페이지</a> <a
+		href="http://www.w3.org/">웹의 홈페이지</a>
+	</span>
+	<span> <a href="http://www.w3schools.com/" target="_blank">웹기술
+			학습페이지</a>
+	</span>
+	<h2 class=pinkcolor>unordered list</h2>
+	<ul>
+		<li>배위에서 잡은지 <span class="bold">3초된</span> 다금바리 스시
+		</li>
+		<li>도축장에서 갖 도축된 육회</li>
+		<li>1m 밑 뻘에서 갓 잡아올려 바닷물에 대충씻은 낙지</li>
+	</ul>
+	<h2 class=pinkcolor>ordered list</h2>
+	<ol>
+		<li>배위에서 잡은지 3초된 다금바리 스시</li>
+		<li>도축장에서 갖 <span class="bold">도축</span>된 육회
+		</li>
+		<li>1m 밑 뻘에서 갓 잡아올려 바닷물에 대충씻은 낙지</li>
+	</ol>
+	<table border="1">
+		<tr>
+			<th colspan="4">시간표</th>
+		</tr>
+		<tr>
+			<th></th>
+			<th>월요일</th>
+			<th>화요일</th>
+			<th>수요일</th>
+		</tr>
+		<tr>
+			<td>1교시</td>
+			<td>C언어</td>
+			<td>JAVA언어</td>
+			<td>JAVA언어</td>
+		</tr>
+		<tr>
+			<td>2교시</td>
+			<td>C언어</td>
+			<td>JAVA언어</td>
+			<td>JAVA언어</td>
+		</tr>
+	</table>
+</body>
+</html>

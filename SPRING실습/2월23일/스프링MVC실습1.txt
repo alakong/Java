@@ -1,0 +1,7 @@
+spmvclab 이라는 daynamic web project 를 생성하여
+스프링 MVC 를 개발할 수 있는 환경을 구성합니다.
+
+1. VO 클래스를 vo 디렉토리에 복사한다.
+2. html 파일은 복사하여 action 속성만 수정한다.
+3. 서블릿은 EduController 로 변경한다.
+4. JSP 는 그대로 views 폴더에 복사한다.

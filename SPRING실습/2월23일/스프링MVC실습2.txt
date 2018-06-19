@@ -1,0 +1,7 @@
+1. VO 클래스를 vo 디렉토리에 복사한다.
+2. html 파일은 복사하여 action 속성만 수정한다.
+3. 서블릿은 MemberController 로 변경한다.
+4. JSP 들은 그대로 views 폴더에 복사한다.
+
+
+----> MemberController.java 만 제출한다.

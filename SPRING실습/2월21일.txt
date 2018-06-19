@@ -1,0 +1,14 @@
+(1) springlab 이라는 자바프로젝트를 생성한다.
+(2) springlab 을 MAVEN 프로젝트로 변환한다.
+(3) pom.xml 에 SPRING-CONTEXT 관련 태그를 추가한다.
+
+[ 구현 내용 ]
+
+(1) SalaryExpr 을 빈으로 등록하는 bean configuration 파일을 생성한다.
+     ---> 2개 등록 (아규먼트 안받는 / 받는(100))
+
+(2) Random 클래스를 빈으로 등록한다. (랜덤 java.util.Random)
+
+
+(3) 짝수달 호수달에 따라 등록된 빈을 찾아서 getSalary() 를 호출하고 리턴된 
+      결과를 화면에  출력하는 코드를 SalaryExam 에 작성한다.
